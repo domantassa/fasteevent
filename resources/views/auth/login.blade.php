@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card myshadowcontainer">
                 <div class="card-header">Prisijungimo forma</div>
 
                 <div class="card-body">
@@ -19,7 +19,7 @@
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
+                                        <strong>Tokios paskyros su el. paštu ir slaptažodžiu neradome</strong>
                                     </span>
                                 @enderror
                             </div>
@@ -33,7 +33,7 @@
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
+                                        <strong>Netinkamas slaptažodis</strong>
                                     </span>
                                 @enderror
                             </div>

@@ -1,5 +1,7 @@
 body {
     background-color: #f1f1f1;
+    background-image: url("/bg_bggenerator_com.jpg");
+    font-family: 'Quicksand';
 }
 
 .container_main {
@@ -13,3 +15,55 @@ body {
 .btn-link {
     font-weight: bold;
 }
+
+.my-navbar {
+    box-shadow: 0px 0px 20px 0px rgba(68, 67, 67, 0.75);
+    background-color: #fff;
+}
+
+.mylink {
+    color: rgb(113, 112, 112);
+    font-family: 'Quicksand';
+    font-weight: 600;
+    transition: 0.1s;
+    font-size: 16px !important;
+}
+
+.myp {
+    color: rgb(113, 112, 112);
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 16px !important;
+}
+
+.mylink:hover {
+    color: rgb(91, 90, 90);
+    font-family: 'Quicksand';
+    font-weight: 1000;
+    
+    text-shadow: 1px 1px 2px rgb(194, 188, 188);
+}
+
+.myshadowcontainer {
+    box-shadow: 0px 0px 20px 0px rgb(27, 25, 25);
+}
+
+.biggerfont {
+    font-size: 18px;
+    display:block;
+}
+
+.paragrafas {
+    height: 350px;
+    overflow: auto;
+    overflow-x: hidden;
+    
+}
+
+.float-right {
+    float: right;
+}
+
+
+
+[data-href] { cursor: pointer; }

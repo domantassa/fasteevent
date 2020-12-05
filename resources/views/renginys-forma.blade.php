@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card myshadowcontainer">
+            <div class="card">
                 <div class="card-header">Registravimosi forma</div>
 
                 <div class="card-body">
@@ -15,7 +15,7 @@
                             <label for="vardas_pavarde" class="col-md-4 col-form-label text-md-right">Vardas ir pavardė</label>
 
                             <div class="col-md-6">
-                                <input id="vardas_pavarde" type="text" class="form-control @error('vardas_pavarde') is-invalid @enderror" name="vardas_pavarde" value="{{ old('vardas_pavarde') }}" autocomplete="name" autofocus>
+                                <input id="vardas_pavarde" type="text" class="form-control @error('vardas_pavarde') is-invalid @enderror" name="vardas_pavarde" value="{{ old('vardas_pavarde') }}" autocomplete="name" autofocus required>
 
                                 @error('vardas_pavarde')
                                     <span class="invalid-feedback" role="alert">

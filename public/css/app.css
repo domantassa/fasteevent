@@ -8,9 +8,9 @@
  */
 
 :root {
-  --blue: #3490dc;
-  --indigo: #6574cd;
-  --purple: #9561e2;
+  --blue: #424447;
+  --indigo: #424447;
+  --purple: #424447;
   --pink: #f66d9b;
   --red: #e3342f;
   --orange: #f6993f;
@@ -21,7 +21,7 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #3490dc;
+  --primary: #424447;
   --secondary: #6c757d;
   --success: #38c172;
   --info: #6cb2eb;
@@ -2668,21 +2668,21 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #3490dc;
-  border-color: #3490dc;
+  background-color: #424447;
+  border-color: rgb(36, 39, 41);
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #227dc7;
-  border-color: #2176bd;
+  background-color: #424447;
+  border-color: rgb(36, 39, 41);
 }
 
 .btn-primary:focus,
 .btn-primary.focus {
   color: #fff;
-  background-color: #227dc7;
-  border-color: #2176bd;
+  background-color:#424447;
+  border-color: rgb(36, 39, 41);
   box-shadow: 0 0 0 0.2rem rgba(82, 161, 225, 0.5);
 }
 

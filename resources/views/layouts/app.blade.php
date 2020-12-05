@@ -20,11 +20,33 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md mb-5">
+        
+        <nav class="navbar my-navbar navbar-expand-md mb-5">
             <div class="container">
-                <a class="navbar-brand text-uppercase" href="{{ url('/') }}">
-                    Pagrindinis
+                
+                @if(auth()->check())
+                @if(auth()->user()->role!="admin")
+                <a class=" mylink navbar-brand text-uppercase" href="{{ url('/mano-renginiai') }}">
+                    Mano renginiai
                 </a>
+                <a class=" mylink navbar-brand text-uppercase" href="{{ url('/renginiai') }}">
+                    Visi renginiai
+                </a>
+                @endif
+                @if(auth()->user()->role=="renginio_organizatorius")
+                <a class=" mylink navbar-brand text-uppercase" href="{{ url('/renginys') }}">
+                    Sukurti renginį
+                </a>
+                @endif
+                @if (auth()->user()->role=="admin")
+                <a class=" mylink navbar-brand text-uppercase" href="{{ url('/renginiai') }}">
+                    Visi renginiai
+                </a>
+                <a class=" mylink navbar-brand text-uppercase" href="{{ url('/vartotojai') }}">
+                    Visi vartotojai
+                </a>
+                @endif 
+                @endif                               
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -40,31 +62,25 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase" href="{{ route('login') }}">Prisijungti</a>
+                                <a class=" mylink navbar-brand text-uppercase" href="{{ route('login') }}">
+                                    Prisijungti
+                                </a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item text-uppercase">
-                                    <a class="nav-link" href="{{ route('register') }}">Užsiregistruoti</a>
+                                    <a class="mylink navbar-brand text-uppercase" href="{{ route('register') }}">Užsiregistruoti</a>
                                 </li>
                             @endif
                         @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link text-uppercase dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->vardas_pavarde }}
-                                </a>
 
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        Atsijungti
-                                    </a>
+                        <a class=" mylink navbar-brand text-uppercase" href="{{ route('logout') }}">
+                            Atsijungti
+                        </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
+                    
+
+                                    
+
                         @endguest
                     </ul>
                 </div>
@@ -72,7 +88,11 @@
         </nav>
 
         <main class="py-4">
+            <div class="container col-md-8">
+            @include('layouts.flash-message')
+            </div>
             @yield('content')
+            
         </main>
     </div>
 </body>

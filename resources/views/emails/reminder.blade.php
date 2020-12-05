@@ -1,0 +1,1 @@
+<h1>Priminimas į artėjantį renginį! Prisijungite prie renginių sistemos ir pasitikrinkite laiką.</h1>

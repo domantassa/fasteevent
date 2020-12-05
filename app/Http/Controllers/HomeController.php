@@ -25,4 +25,23 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function visiVartotojai()
+    {
+
+        $users = \App\User::all();
+        return view('vartotojai')->with([
+            'users' => $users,
+        ]);
+        
+    }
+
+    public function destroy($id)
+    {
+        $user = \App\User::find($id);
+        $user->delete();
+        return redirect('vartotojai');
+    }
+    
+    
 }

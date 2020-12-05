@@ -5,9 +5,9 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
  :root {
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
+    --blue: #424447;
+    --indigo: #424447;
+    --purple: #424447;
     --pink: #e83e8c;
     --red: #dc3545;
     --orange: #fd7e14;
@@ -18,7 +18,7 @@
     --white: #fff;
     --gray: #6c757d;
     --gray-dark: #343a40;
-    --primary: #007bff;
+    --primary: #424447;
     --secondary: #6c757d;
     --success: #28a745;
     --info: #17a2b8;
@@ -4965,7 +4965,7 @@
   
   .badge-primary {
     color: #fff;
-    background-color: #007bff;
+    background-color: #424447;
   }
   
   a.badge-primary:hover, a.badge-primary:focus {

@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\renginiai;
+use App\reservacijaT;
 use Illuminate\Http\Request;
+use App\User;
 
-class RenginiaiController extends Controller
+class ReservacijaTController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +42,10 @@ class RenginiaiController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\renginiai  $renginiai
+     * @param  \App\reservacijaT  $reservacijaT
      * @return \Illuminate\Http\Response
      */
-    public function show(renginiai $renginiai)
+    public function show(reservacijaT $reservacijaT)
     {
         //
     }
@@ -52,10 +53,10 @@ class RenginiaiController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\renginiai  $renginiai
+     * @param  \App\reservacijaT  $reservacijaT
      * @return \Illuminate\Http\Response
      */
-    public function edit(renginiai $renginiai)
+    public function edit(reservacijaT $reservacijaT)
     {
         //
     }
@@ -64,10 +65,10 @@ class RenginiaiController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\renginiai  $renginiai
+     * @param  \App\reservacijaT  $reservacijaT
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, renginiai $renginiai)
+    public function update(Request $request, reservacijaT $reservacijaT)
     {
         //
     }
@@ -75,10 +76,10 @@ class RenginiaiController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\renginiai  $renginiai
+     * @param  \App\reservacijaT  $reservacijaT
      * @return \Illuminate\Http\Response
      */
-    public function destroy(renginiai $renginiai)
+    public function destroy(reservacijaT $reservacijaT)
     {
         //
     }
