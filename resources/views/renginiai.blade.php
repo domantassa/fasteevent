@@ -7,6 +7,7 @@
         <div class="col-md-10">
             <div class="card myshadowcontainer">
                 <div class="card-body">
+                    <h1 class="display-6 text-center mb-3">Domanto Sabaliauskas IFF-8-7 IT projektas</h1>
                     <h1 class="display-6 text-center mb-3">Visi renginiai</h1>
                     
                     
