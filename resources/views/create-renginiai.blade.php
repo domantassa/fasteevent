@@ -70,11 +70,12 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-md-4 col-form-label text-md-right">Žyma</label>
+                    <label class="col-md-4 col-form-label text-md-right">Kategorija</label>
                     <div class="col-md-5">
                         <select class="form-control" name="zyma">
                             <option {{ $form_type === 'edit' && $renginys->zyma === 'Pokalbių šou' ? 'selected' : '' }} value='Pokalbių šou'>Pokalbių šou</option>
                             <option {{ $form_type === 'edit' && $renginys->zyma === 'Muzikinis festivalis' ? 'selected' : '' }} value='Muzikinis festivalis'>Muzikinis festivalis</option>
+                            <option {{ $form_type === 'edit' && $renginys->zyma === 'Muzikinis pasirodymas' ? 'selected' : '' }} value='Muzikinis pasirodymas'>Muzikinis pasirodymas</option>
                         </select> 
                     </div>
                 </div>
